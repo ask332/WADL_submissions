@@ -1,0 +1,77 @@
+body{
+    display: flex;
+
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "logo-name" "content"
+    "content-table" "content"
+}
+
+.side-bar{
+    
+    background-color: #2C3333;
+    justify-content: center;
+}
+.logo-name{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    grid-area: logo-name;
+}
+.content-table{
+    margin-top: 20px;
+    grid-area: content-table;
+   
+}
+.content-name{
+    padding: 20px;
+    background-color: #2666CF;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+.content{
+    scroll-behavior: smooth;
+    margin: 0 10px;
+}
+.home{
+    text-align: center;
+    justify-content: center;
+}
+.products{
+    margin: 50px;  
+}
+.copyright{
+    background-color: black;
+    text-align: center;
+    
+}
+.percentages{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+.distribution {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 0.5 auto;
+}
+#my-chart.line {
+    height: 300px;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+@media only screen and (max-width: 700px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 4fr;
+    }    
+}
